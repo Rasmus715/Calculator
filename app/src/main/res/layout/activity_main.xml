@@ -9,7 +9,7 @@
     tools:context=".MainActivity">
 
     <EditText
-        android:id="@+id/result"
+        android:id="@+id/newNumber"
         android:layout_width="365dp"
         android:layout_height="42dp"
         android:layout_marginStart="8dp"
@@ -29,19 +29,19 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:textSize="18sp"
-        app:layout_constraintEnd_toStartOf="@+id/result"
+        app:layout_constraintEnd_toStartOf="@+id/newNumber"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/result"
+        app:layout_constraintTop_toBottomOf="@+id/newNumber"
         tools:text="+" />
 
     <EditText
-        android:id="@+id/newNumber"
+        android:id="@+id/result"
         android:layout_width="365dp"
         android:layout_height="42dp"
         android:ems="10"
         android:inputType="numberSigned|numberDecimal"
-        app:layout_constraintEnd_toEndOf="@+id/result"
+        app:layout_constraintEnd_toEndOf="@+id/newNumber"
         app:layout_constraintStart_toEndOf="@+id/operation"
         app:layout_constraintTop_toBottomOf="@+id/operation" />
 
@@ -135,8 +135,8 @@
         android:layout_marginTop="8dp"
         android:minWidth="88dp"
         android:text="7"
-        app:layout_constraintStart_toStartOf="@+id/newNumber"
-        app:layout_constraintTop_toBottomOf="@+id/newNumber" />
+        app:layout_constraintStart_toStartOf="@+id/result"
+        app:layout_constraintTop_toBottomOf="@+id/result" />
 
     <Button
         android:id="@+id/button3"
